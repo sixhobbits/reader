@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+        <style>
+
+            html {
+                    font-family: "Helvetica";
+            }
+
+            body {
+              max-width: 900px;
+              padding-left: 20px;
+              padding-right: 20px;
+              padding-top: 30px;
+              margin: 0 auto;
+              text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+      <h1>{{title}}</h1>
+      {% for paragraph in paragraphs %}
+          <p>{{paragraph}}</p>
+      {% endfor %}
+    </body>
+</html>
