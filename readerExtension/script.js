@@ -1,6 +1,7 @@
 function plaintext(info,tab) {
   chrome.tabs.create({  
-    url: "http://localhost:5000/reader?url=" + info.linkUrl,
+    url: "http://plaintext.dwyer.co.za/article?url=" + info.linkUrl,
+    active: false;
   });           
 }
 chrome.contextMenus.create({
